@@ -1,10 +1,48 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ng-drag-drop';
+  date: any[] = [];
+
+  constructor() {
+    this.date = [
+      {
+        "name": "TM01",
+        "months": [
+          {
+            "name": 'january',
+            "products": ['P1', 'P2', 'P3']
+          },
+          {
+            "name": 'feb',
+            "products": ['P1', 'P2']
+          },
+          {
+            "name": 'mar',
+            "products": ['P1', 'P2']
+          }
+        ]
+      },
+      {
+        "name": "TM02",
+        "months": [
+          {
+            "name": 'january',
+            "products": ['P1', 'P2', 'P3']
+          },
+          {
+            "name": 'feb',
+            "products": ['P1', 'P2']
+          },
+          {
+            "name": 'mar',
+            "products": ['P1', 'P2']
+          }
+        ]
+      },
+    ]
+  }
 }
